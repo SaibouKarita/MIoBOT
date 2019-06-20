@@ -27,7 +27,7 @@ function script(data) {
 }
 
 let data = JSON.parse(fs.readFileSync("./user/config.json"));
-if (data.user[0].email == "FACEBOOK_USERNAME_OR_EMAIL" || data.user[0].password == "YOUR_PASSWORD")
+if (data.user[0].email == "0528122205" || data.user[0].password == "indexxx")
     log.writeError("Lỗi, file /user/config.json chưa định dạng")
 else 
     script(data);
