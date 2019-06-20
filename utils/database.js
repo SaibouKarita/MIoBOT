@@ -17,8 +17,8 @@ const group_db = new sqlite3.Database(chat_historyPath);
  * a.info : user info {JSON}, example: {"gender": "female", "age":14, "group-invited": [{"gr-id":"2280940368589017","nick-name": "tea", "score": 255, "level": 14} ], "avt-url":"https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-9/33395771_213719562744788_8610615005559128064_n.jpg?_nc_cat=0&oh=b3f73cc29c11a8f92e2c739fafd5e57a&oe=5BCDEC15","profile-url": "https://www.facebook.com/da.tra.1671"}
  * b.id : group id 
  * b.name : group nameGROUP
- * b.user : group user list {JSON}, example: [{"id":"100023202380649","name":"Phạm Lê Thảo Nguyên", "user-id":1},{"id":"100006360818148","name":"Nguyễn Lê Viết Anh", "user-id":2}]
- *    
+ * b.user : group user list {JSON}, example: [{"id":"100023202380649","name":"Phạm Lê Thảo Nguyên", "user-id":1},{"id":"neko.trang.1","name":"Neko Sama", "user-id":2}]
+ *   
  */ 
 module.exports._add = function(a,b){
     user_db.serialize(function(){
